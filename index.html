@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Menú móvil -->
+    <nav class="navbar navbar-expand-lg bg-light mobile-header ms-0 py-0">
+      <div class="container-fluid px-0">
+        <!-- Icono calendario -->
+        <a href="#">
+          <div class="calendar-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-calendar"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+              />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Logo y texto -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./img/icono.png" alt="Logo Molino" />
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMobile"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú hamburguesa -->
+        <div class="collapse navbar-collapse" id="navbarMobile">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hostal Boutique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Habitaciones</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Cocina</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Celebraciones</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Regala</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Entorno</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menú horizontal para escritorio -->
+    <nav class="main-menu">
+      <div class="container-fluid d-flex justify-content-center">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">INICIO</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOSTAL BOUTIQUE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HABITACIONES</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">COCINA</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CELEBRACIONES</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">REGALA</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">ENTORNO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      id="myCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3500"
+    >
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/Imagen_1.jpg"
+            class="d-block w-100 img-carrusel"
+            alt="Slide 1"
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/Imagen_2.jpg"
+            class="d-block w-100 img-carrusel"
+            alt="Slide 2"
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+      </div>
+      <div class="carousel-overlay text-end">
+        <h2 class="titulo-carrusel">DESCUBRE NUESTRAS HABITACIONES</h2>
+        <p class="subtitulo-carrusel">Elegantes, agradables y acogedoras...</p>
+      </div>
+      <div class="reserva-container py-4" style="background-color: #7a715f">
+        <div class="reserva-container py-4" style="background-color: #7a715f">
+          <div class="container">
+            <form
+              class="row g-0 bg-white shadow-sm p-3 align-items-center justify-content-center rounded"
+            >
+              <div class="col-6 col-md-3 text-center border-end border-md-end">
+                <label
+                  for="checkin"
+                  class="form-label text-uppercase small mb-1 text-muted"
+                  >Check-In</label
+                >
+                <input
+                  type="date"
+                  id="checkin"
+                  class="form-control border-0 text-center fw-semibold"
+                  value="2025-11-05"
+                />
+              </div>
+
+              <div class="col-6 col-md-3 text-center border-end border-md-end">
+                <label
+                  for="checkout"
+                  class="form-label text-uppercase small mb-1 text-muted"
+                  >Check-Out</label
+                >
+                <input
+                  type="date"
+                  id="checkout"
+                  class="form-control border-0 text-center fw-semibold"
+                  value="2025-11-07"
+                />
+              </div>
+
+              <div
+                class="col-6 col-md-3 text-center border-end border-md-end mt-3 mt-md-0"
+              >
+                <label
+                  for="adultos"
+                  class="form-label text-uppercase small mb-1 text-muted"
+                  >Adultos</label
+                >
+                <select
+                  id="adultos"
+                  class="form-select border-0 text-center fw-semibold"
+                >
+                  <option>1</option>
+                  <option selected>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+
+              <div class="col-6 col-md-2 text-center mt-3 mt-md-0">
+                <button
+                  type="submit"
+                  class="btn btn-buscar w-100 d-flex align-items-center justify-content-center"
+                >
+                  <span class="d-none d-md-inline text-uppercase fw-bold"
+                    >Buscar&nbsp&nbsp</span
+                  >
+                  <i class="bi bi-search fs-5"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>
