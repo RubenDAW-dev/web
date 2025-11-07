@@ -9,8 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./styles/landing.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Menú móvil -->
@@ -93,6 +95,7 @@
       </div>
     </nav>
 
+    <!-- Carrusel de imagenes y form con reserva -->
     <div
       id="myCarousel"
       class="carousel slide"
@@ -191,7 +194,95 @@
         </div>
       </div>
     </div>
+    <!-- Info Habitacions -->
+    <div class="habitaciones-info">
+      <h2>Nuestras Habitaciones</h2>
+      <p>
+        Decoradas de formas únicas y diferenciadoras que otorgan a cada una de
+        ellas un carácter especial.
+      </p>
+    </div>
+
+    <!-- Carrusel de Habitaciones -->
+    <div id="myCarousel2" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item position-relative active">
+          <img
+            src="./img/Habitacion_1.jpg"
+            class="d-block w-100 img-carrusel"
+            alt="Slide 1"
+          />
+          <div
+            class="carousel-caption d-flex justify-content-center align-items-end"
+            style="height: 100%"
+          >
+            <button class="btn-habitaciones">Nuestras Habitaciones</button>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="./img/Habitacion_2.jpg"
+            class="d-block w-100 img-carrusel"
+            alt="Slide 2"
+          />
+          <div
+            class="carousel-caption d-flex justify-content-center align-items-end"
+            style="height: 100%"
+          >
+            <button class="btn-habitaciones">Nuestras Habitaciones</button>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="./img/Habitacion_3.jpg"
+            class="d-block w-100 img-carrusel"
+            alt="Slide 3"
+          />
+          <div
+            class="carousel-caption d-flex justify-content-center align-items-end"
+            style="height: 100%"
+          >
+            <button class="btn-habitaciones">Nuestras Habitaciones</button>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="./img/Habitacion_4.jpg"
+            class="d-block w-100 img-carrusel"
+            alt="Slide 4"
+          />
+          <div
+            class="carousel-caption d-flex justify-content-center align-items-end"
+            style="height: 100%"
+          >
+            <button class="btn-habitaciones">Nuestras Habitaciones</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón izquierdo -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel2"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+
+      <!-- Botón derecho -->
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel2"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
   </body>
 </html>
