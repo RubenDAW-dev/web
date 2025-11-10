@@ -1,119 +1,142 @@
-/* Estilos personalizados */
-.calendar-icon {
-  background-color: #5a4a3f;
-  padding: 12px 100px;
-  min-width: 40px;
-  max-width: 40px;
-  min-height: 48px;
-}
-.calendar-icon svg {
-  color: white;
-}
-.navbar-brand img {
-  height: 24px;
-  margin-right: 8px;
-}
-.main-menu {
-  background-color: #5a4a3f;
-}
-.main-menu .nav-link {
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-}
-.main-menu .nav-link:hover {
-  background-color: #7a6657;
-  color: white;
-}
-
-.img-carrusel {
-  max-height: 600px;
-  object-fit: cover;
-}
-
-.carousel-overlay {
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-}
-
-.form-control:focus,
-.form-select:focus {
-  box-shadow: none;
-  border-color: transparent;
-}
-
-.btn-buscar {
-  background-color: #4e4a32;
-  color: white;
-  border: none;
-  height: 42px;
-  transition: background-color 0.3s ease;
-}
-
-.btn-buscar:hover {
-  background-color: #615a3d;
-}
-.habitaciones-info {
-  background-color: #5a4a3f;
-  color: white;
-  text-align: center;
-  padding: 20px 20px;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.habitaciones-info h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.habitaciones-info p {
-  font-size: 0.95rem;
-  margin: 0 auto;
-  max-width: 700px;
-}
-.btn-habitaciones {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #5a4a3f;
-  color: white;
-  border: none;
-  padding: 6px 16px;
-  font-size: 0.95rem;
-  border-radius: 6px;
-  white-space: nowrap;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease;
-}
-.btn-habitaciones:hover {
-  background-color: #7a6352;
-}
-
-@media (max-width: 768px) {
-  .reserva-container form {
-    text-align: center;
+  /* Estilos personalizados */
+  .calendar-icon {
+    background-color: #5a4a3f;
+    padding: 12px 100px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 48px;
   }
-  .reserva-container .border-end {
-    border-right: none !important;
-  }
-  .reserva-container .border-md-end {
-    border-bottom: 1px solid #eaeaea;
-  }
-}
 
-@media (max-width: 991.98px) {
+  .calendar-icon svg {
+    color: white;
+  }
+
+  .navbar-brand img {
+    height: 24px;
+    margin-right: 8px;
+  }
+
   .main-menu {
-    display: none;
+    background-color: #5a4a3f;
   }
-}
 
-@media (min-width: 992px) {
-  .mobile-header {
-    display: none;
+  .main-menu .nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 12px 16px;
   }
-}
+
+  .main-menu .nav-link:hover {
+    background-color: #7a6657;
+    color: white;
+  }
+
+  .img-carrusel {
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .carousel-overlay {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    box-shadow: none;
+    border-color: transparent;
+  }
+
+  .btn-buscar {
+    min-width: 140px;
+    height: 42px;
+    background-color: #4e4a32;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+
+  .btn-buscar:hover {
+    background-color: #615a3d;
+  }
+
+  .habitaciones-info {
+    background-color: #5a4a3f;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .habitaciones-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .habitaciones-info p {
+    font-size: 0.95rem;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .btn-habitaciones {
+    background-color: #5a4a3f;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-habitaciones:hover {
+    background-color: #7a6352;
+  }
+
+  footer {
+    font-size: 0.95rem;
+    background-color: #A2937F;
+  }
+
+  footer h5 {
+    color: #f8f8f8;
+  }
+
+  footer i {
+    color: #000000;
+  }
+
+  @media (max-width: 768px) {
+    .reserva-container form {
+      text-align: center;
+    }
+
+    .reserva-container .border-end {
+      border-right: none !important;
+    }
+
+    .reserva-container .border-md-end {
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .img-carrusel {
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .main-menu {
+      display: none;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .mobile-header {
+      display: none;
+    }
+  }

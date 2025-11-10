@@ -1,65 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./styles/landing.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./styles/landing.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
     <!-- Menú móvil -->
     <nav class="navbar navbar-expand-lg bg-light mobile-header ms-0 py-0">
       <div class="container-fluid px-0">
         <!-- Icono calendario -->
         <a href="#">
           <div class="calendar-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              class="bi bi-calendar"
-              viewBox="0 0 16 16"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar"
+              viewBox="0 0 16 16">
               <path
-                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
-              />
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
             </svg>
           </div>
         </a>
 
         <!-- Logo y texto -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img src="./img/icono.png" alt="Logo Molino" />
         </a>
 
         <!-- Botón hamburguesa -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarMobile"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Menú hamburguesa -->
         <div class="collapse navbar-collapse" id="navbarMobile">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
             <li class="nav-item">
               <a class="nav-link" href="#">Hostal Boutique</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Habitaciones</a>
+              <a class="nav-link" href="habitaciones.html">Habitaciones</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Cocina</a></li>
             <li class="nav-item">
@@ -77,12 +62,12 @@
     <nav class="main-menu">
       <div class="container-fluid d-flex justify-content-center">
         <ul class="nav">
-          <li class="nav-item"><a class="nav-link" href="#">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
           <li class="nav-item">
             <a class="nav-link" href="#">HOSTAL BOUTIQUE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">HABITACIONES</a>
+            <a class="nav-link" href="habitaciones.html">HABITACIONES</a>
           </li>
           <li class="nav-item"><a class="nav-link" href="#">COCINA</a></li>
           <li class="nav-item">
@@ -94,195 +79,132 @@
         </ul>
       </div>
     </nav>
-
-    <!-- Carrusel de imagenes y form con reserva -->
-    <div
-      id="myCarousel"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="3500"
-    >
-      <!-- Slides -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="./img/Imagen_1.jpg"
-            class="d-block w-100 img-carrusel"
-            alt="Slide 1"
-          />
-          <div class="carousel-caption d-none d-md-block"></div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./img/Imagen_2.jpg"
-            class="d-block w-100 img-carrusel"
-            alt="Slide 2"
-          />
-          <div class="carousel-caption d-none d-md-block"></div>
-        </div>
+  </header>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/Imagen_1.jpg" class="d-block w-100 img-carrusel" alt="Slide 1" />
+        <div class="carousel-caption d-none d-md-block"></div>
       </div>
-      <div class="carousel-overlay text-end">
-        <h2 class="titulo-carrusel">DESCUBRE NUESTRAS HABITACIONES</h2>
-        <p class="subtitulo-carrusel">Elegantes, agradables y acogedoras...</p>
+      <div class="carousel-item">
+        <img src="./img/Imagen_2.jpg" class="d-block w-100 img-carrusel" alt="Slide 2" />
+        <div class="carousel-caption d-none d-md-block"></div>
       </div>
+    </div>
+    <div class="carousel-overlay text-end">
+      <h2 class="titulo-carrusel">DESCUBRE NUESTRAS HABITACIONES</h2>
+      <p class="subtitulo-carrusel">Elegantes, agradables y acogedoras...</p>
+    </div>
+    <div class="reserva-container py-4" style="background-color: #7a715f">
       <div class="reserva-container py-4" style="background-color: #7a715f">
-        <div class="reserva-container py-4" style="background-color: #7a715f">
-          <div class="container">
-            <form
-              class="row g-0 bg-white shadow-sm p-3 align-items-center justify-content-center rounded"
-            >
-              <div class="col-6 col-md-3 text-center border-end border-md-end">
-                <label
-                  for="checkin"
-                  class="form-label text-uppercase small mb-1 text-muted"
-                  >Check-In</label
-                >
-                <input
-                  type="date"
-                  id="checkin"
-                  class="form-control border-0 text-center fw-semibold"
-                  value="2025-11-05"
-                />
-              </div>
+        <div class="container">
+          <form class="row g-0 bg-white shadow-sm p-3 align-items-center justify-content-center rounded">
+            <div class="col-6 col-md-3 text-center border-end border-md-end">
+              <label for="checkin" class="form-label text-uppercase small mb-1 text-muted">Check-In</label>
+              <input type="date" id="checkin" class="form-control border-0 text-center fw-semibold"
+                value="2025-11-05" />
+            </div>
 
-              <div class="col-6 col-md-3 text-center border-end border-md-end">
-                <label
-                  for="checkout"
-                  class="form-label text-uppercase small mb-1 text-muted"
-                  >Check-Out</label
-                >
-                <input
-                  type="date"
-                  id="checkout"
-                  class="form-control border-0 text-center fw-semibold"
-                  value="2025-11-07"
-                />
-              </div>
+            <div class="col-6 col-md-3 text-center border-end border-md-end">
+              <label for="checkout" class="form-label text-uppercase small mb-1 text-muted">Check-Out</label>
+              <input type="date" id="checkout" class="form-control border-0 text-center fw-semibold"
+                value="2025-11-07" />
+            </div>
 
-              <div
-                class="col-6 col-md-3 text-center border-end border-md-end mt-3 mt-md-0"
-              >
-                <label
-                  for="adultos"
-                  class="form-label text-uppercase small mb-1 text-muted"
-                  >Adultos</label
-                >
-                <select
-                  id="adultos"
-                  class="form-select border-0 text-center fw-semibold"
-                >
-                  <option>1</option>
-                  <option selected>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-              </div>
+            <div class="col-6 col-md-3 text-center border-end border-md-end mt-3 mt-md-0">
+              <label for="adultos" class="form-label text-uppercase small mb-1 text-muted">Adultos</label>
+              <select id="adultos" class="form-select border-0 text-center fw-semibold">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center align-items-center mt-3 mt-md-0">
+              <button type="submit" class="btn btn-buscar d-flex align-items-center justify-content-center">
+                <span class="d-none d-md-inline text-uppercase fw-bold">Buscar&nbsp;&nbsp;</span>
+                <i class="bi bi-search fs-5"></i>
+              </button>
+            </div>
 
-              <div class="col-6 col-md-2 text-center mt-3 mt-md-0">
-                <button
-                  type="submit"
-                  class="btn btn-buscar w-100 d-flex align-items-center justify-content-center"
-                >
-                  <span class="d-none d-md-inline text-uppercase fw-bold"
-                    >Buscar&nbsp&nbsp</span
-                  >
-                  <i class="bi bi-search fs-5"></i>
-                </button>
-              </div>
-            </form>
-          </div>
+
+
+          </form>
         </div>
       </div>
     </div>
-    <!-- Info Habitacions -->
-    <div class="habitaciones-info">
-      <h2>Nuestras Habitaciones</h2>
-      <p>
-        Decoradas de formas únicas y diferenciadoras que otorgan a cada una de
-        ellas un carácter especial.
-      </p>
-    </div>
+  </div>
+  <div class="habitaciones-info">
+    <h2>Nuestras Habitaciones</h2>
+    <p>
+      Decoradas de formas únicas y diferenciadoras que otorgan a cada una de
+      ellas un carácter especial.
+    </p>
+  </div>
 
-    <!-- Carrusel de Habitaciones -->
-    <div id="myCarousel2" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item position-relative active">
-          <img
-            src="./img/Habitacion_1.jpg"
-            class="d-block w-100 img-carrusel"
-            alt="Slide 1"
-          />
-          <div
-            class="carousel-caption d-flex justify-content-center align-items-end"
-            style="height: 100%"
-          >
-            <button class="btn-habitaciones">Nuestras Habitaciones</button>
+  <div class="container-fluid p-0 m-0">
+    <div class="row g-0">
+      <!-- Carrusel -->
+      <div class="col-12 col-md-8 order-1 order-md-2 p-0 m-0">
+        <div id="habitacionesCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/Habitacion_1.jpg" class="d-block w-100 img-carrusel" alt="Habitación 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Habitacion_2.jpg" class="d-block w-100 img-carrusel" alt="Habitación 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Habitacion_3.jpg" class="d-block w-100 img-carrusel" alt="Habitación 3" />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item position-relative">
-          <img
-            src="./img/Habitacion_2.jpg"
-            class="d-block w-100 img-carrusel"
-            alt="Slide 2"
-          />
-          <div
-            class="carousel-caption d-flex justify-content-center align-items-end"
-            style="height: 100%"
-          >
-            <button class="btn-habitaciones">Nuestras Habitaciones</button>
-          </div>
-        </div>
-        <div class="carousel-item position-relative">
-          <img
-            src="./img/Habitacion_3.jpg"
-            class="d-block w-100 img-carrusel"
-            alt="Slide 3"
-          />
-          <div
-            class="carousel-caption d-flex justify-content-center align-items-end"
-            style="height: 100%"
-          >
-            <button class="btn-habitaciones">Nuestras Habitaciones</button>
-          </div>
-        </div>
-        <div class="carousel-item position-relative">
-          <img
-            src="./img/Habitacion_4.jpg"
-            class="d-block w-100 img-carrusel"
-            alt="Slide 4"
-          />
-          <div
-            class="carousel-caption d-flex justify-content-center align-items-end"
-            style="height: 100%"
-          >
-            <button class="btn-habitaciones">Nuestras Habitaciones</button>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#habitacionesCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#habitacionesCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
 
-      <!-- Botón izquierdo -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#myCarousel2"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-
-      <!-- Botón derecho -->
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#myCarousel2"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
+      <!-- Texto -->
+      <div class="col-12 col-md-4 order-2 order-md-1 d-flex flex-column justify-content-center p-4 text-white"
+        style="background-color: #8B7E6C;color: white;">
+        <h2 class="mb-3">Bienvenidos a El Molino de Floren</h2>
+        <p>
+          El Molino de Floren se encuentra situado en Santo Domingo de la Calzada, La Rioja, en pleno corazón de La
+          Rioja Alta. Ciudad turística y centenaria en la que disfrutarás de su gente y su patrimonio histórico.
+          <br /><br />
+          Entornos y escapadas rurales en un hotel con un encanto único situado en La Rioja.
+        </p>
+        <a href="habitaciones.html" class="btn btn-habitaciones mt-3 align-self-start">Ver nuestras habitaciones</a>
+      </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <footer class="container-fluid text-white py-4" style="background-color: #A2937F;">
+    <div class="row text-center text-md-start">
+      <!-- Nombre y dirección -->
+      <div class="col-12 col-md-6 mb-3 mb-md-0" style="color: black;">
+        <h5 class="fw-bold">Hostal Boutique El Molino de Floren</h5>
+        <p class="mb-1">C. Margubete, 5, Santo Domingo de la Calzada</p>
+        <p class="mb-1">26250, España</p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-12 col-md-6" style="color: black;">
+        <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>info@elmolinodefloren.com</p>
+        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+34 941 342 931</p>
+        <p class="mb-1"><i class="bi bi-phone-fill me-2"></i>+34 684 191 151</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
