@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f3f1ed, #e8e4df);
+    margin: 0;
+}
+
+
+main {
+    flex: 1;
+    padding: 60px 0;
+}
+
+
+.calendar-icon {
+    background-color: #5a4a3f;
+    padding: 12px 100px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 48px;
+}
+
+.calendar-icon svg {
+    color: white;
+}
+
+.navbar-brand img {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.main-menu {
+    background-color: #5a4a3f;
+}
+
+.main-menu .nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 12px 16px;
+}
+
+.main-menu .nav-link:hover {
+    background-color: #7a6657;
+    color: white;
+}
+
+
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+
+
+footer {
+    margin-top: auto;
+    font-size: 0.95rem;
+    background-color: #A2937F;
+}
+
+footer h5 {
+    color: #f8f8f8;
+}
+
+footer i {
+    color: #000000;
+}
+
+.btn-reservar {
+  background-color: #7A715F;
+  color: #fff;                 
+  border: none;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-reservar:hover {
+  background-color: #5a4a3f;
+  color: #fff;
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .reserva-container form {
+        text-align: center;
+    }
+
+    .reserva-container .border-end {
+        border-right: none !important;
+    }
+
+    .reserva-container .border-md-end {
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .img-carrusel {
+        height: 500px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+}
