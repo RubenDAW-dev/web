@@ -21,7 +21,7 @@
   }
 
   .main-menu .nav-link {
-    color: white;
+    color: #f2f2f2;
     font-weight: bold;
     padding: 12px 16px;
   }
@@ -47,8 +47,8 @@
 
   .form-control:focus,
   .form-select:focus {
-    box-shadow: none;
-    border-color: transparent;
+  outline: 2px solid #ffcc00;
+  outline-offset: 2px;
   }
 
   .btn-buscar {
