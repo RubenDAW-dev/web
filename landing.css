@@ -20,16 +20,27 @@
     background-color: #5a4a3f;
   }
 
-  .main-menu .nav-link {
-    color: #f2f2f2;
-    font-weight: bold;
-    padding: 12px 16px;
-  }
+ .main-menu .nav-link {
+  position: relative;
+  color: #f2f2f2;
+  font-weight: bold;
+  padding: 12px 16px;
+}
 
-  .main-menu .nav-link:hover {
-    background-color: #7a6657;
-    color: white;
-  }
+.main-menu .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffcc00;
+  left: 0;
+  bottom: 5px;
+  transition: width 0.3s ease;
+}
+
+.main-menu .nav-link:hover::after {
+  width: 100%;
+}
 
   .img-carrusel {
     height: 600px;
@@ -61,9 +72,19 @@
   }
 
 
-  .btn-buscar:hover {
-    background-color: #615a3d;
-  }
+  .btn-buscar {
+  min-width: 140px;
+  height: 42px;
+  background-color: #4e4a32;
+  color: white;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-buscar:hover {
+  transform: perspective(500px) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
 
   .habitaciones-info {
     background-color: #5a4a3f;
@@ -110,6 +131,15 @@
   footer i {
     color: #000000;
   }
+
+.img-fluid {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
 
   @media (max-width: 768px) {
     .reserva-container form {
